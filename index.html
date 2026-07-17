@@ -5,13 +5,34 @@
     <title>Ravix Visuals</title>
     <style>
       body { 
-        background: linear-gradient(180deg; #232526. #ffffff);
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        color: #ffffff;
+        margin: 0;
+        padding: 0;
         font-family: sans-serif;
-        text-align: center;
-        padding-top: 250px;
+        text-align. center;
+        background-color: #232526;
+        color: #e2e8f0;
+        overflow-x: hidden;
+
+        background: linear-gradient(180deg, #232526, #1a1c1d),
+          repeating-linear-gradient (45deg,
+          rgba(255, 215, 0, 0.03) 0px,
+          rgba(255, 215, 0, 0.03) 2px,
+          transparent 2px,
+          transparent 40px);
+        background-size: 200% 200%;
+        animation: hintergrundBewegung 30s linear infinite;
+      }
+      @keyframes hintergrundBewegung {
+        0% { background-position: 0% 0%; }
+        100% { background-position: 100% 100% }
+      }
+      .sektion {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 40px;
+        box-sizing: border-box;
       }
       h1 {
         color: #ffd700;
